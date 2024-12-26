@@ -1,0 +1,398 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    animation: slideIn 1s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+#hero {
+    background-color: #1abc9c;
+    padding: 80px 0;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+#about h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Education Section */
+#education {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+#education h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+#education ul {
+    list-style: none;
+}
+
+#education ul li {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    background-color: #f4f6f8;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    width: 48%;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.project-card img:hover {
+    opacity: 0.8;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Achievements Section */
+#achievements {
+    padding: 40px 0;
+    background-color: white;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+#achievements h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.achievements-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.achievement-card {
+    width: 48%;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.achievement-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px 0;
+    background-color: #f4f6f8;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+#skills h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill-card {
+    width: 48%;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Internships Section */
+#internships {
+    padding: 40px 0;
+    background-color: white;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+#internships h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.internships-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.internship-card {
+    width: 48%;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.internship-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.internship-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 0;
+    background-color: #f4f6f8;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-card {
+    width: 48%;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.contact-card a {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+.contact-card a:hover {
+    color: #16a085;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
